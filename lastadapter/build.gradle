@@ -7,12 +7,14 @@ android {
     compileSdkVersion versions.sdkTarget
     buildToolsVersion versions.buildTools
     defaultConfig.minSdkVersion versions.sdkMin
-    dataBinding.enabled true
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
-    compile "com.android.support:recyclerview-v7:$versions.support"
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
 
 apply from: 'publish.gradle'
