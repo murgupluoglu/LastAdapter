@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/murgupluoglu/LastAdapter.svg)](https://jitpack.io/#murgupluoglu/LastAdapter)
+
 [![Download](https://api.bintray.com/packages/moreno/maven/lastadapter/images/download.svg)](https://bintray.com/moreno/maven/lastadapter/_latestVersion)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-LastAdapter-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3810)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -26,6 +28,13 @@
 ### Gradle
 
 ```gradle
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
 // apply plugin: 'kotlin-kapt' // this line only for Kotlin projects
 
 android {
@@ -36,7 +45,7 @@ android {
 }
 
 dependencies {
-    compile 'com.github.nitrico.lastadapter:lastadapter:2.3.0'
+    implementation 'com.github.murgupluoglu:LastAdapter:Tag'
     // kapt 'com.android.databinding:compiler:GRADLE_PLUGIN_VERSION' // this line only for Kotlin projects
 }
 ```
