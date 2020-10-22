@@ -29,11 +29,11 @@
 
 ```gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+   repositories {
+   ...
+   maven { url 'https://jitpack.io' }
+   }
+ }
 
 // apply plugin: 'kotlin-kapt' // this line only for Kotlin projects
 
